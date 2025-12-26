@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Explorer - Latest Headlines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Theme Changer -->
+  <div class="theme-selector">
+    <button class="theme-btn" data-theme="light" title="Light Mode">☀️</button>
+    <button class="theme-btn" data-theme="dark" title="Dark Mode">🌙</button>
+    <button class="theme-btn" data-theme="blue" title="Blue Theme">🔵</button>
+    <button class="theme-btn" data-theme="purple" title="Purple Theme">💜</button>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <h1>📰 News Explorer</h1>
+      <p>Your gateway to the latest headlines worldwide</p>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- Controls Section -->
+    <section class="controls-section">
+      <div class="search-bar">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="🔍 Search news keywords..." 
+          autocomplete="off"
+        >
+        <button id="searchBtn" class="btn-primary">Search</button>
+      </div>
+
+      <div class="filter-controls">
+        <div class="control-group">
+          <label for="categorySelect">Category:</label>
+          <select id="categorySelect">
+            <option value="">All Categories</option>
+            <option value="technology">Technology</option>
+            <option value="sports">Sports</option>
+            <option value="business">Business</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+          </select>
+        </div>
+
+        <button id="clearBtn" class="btn-secondary">Clear Filters</button>
+      </div>
+    </section>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading-spinner">
+      <div class="spinner"></div>
+      <p>Loading headlines...</p>
+    </div>
+
+    <!-- Error Container -->
+    <div id="error" class="error-container"></div>
+
+    <!-- Results Container -->
+    <section id="results" class="results-grid"></section>
+
+    <!-- Pagination -->
+    <div class="pagination-section">
+      <button id="prevBtn" class="btn-secondary">← Previous</button>
+      <div class="page-info">
+        <span>Page <span id="pageNumber">1</span></span>
+      </div>
+      <button id="nextBtn" class="btn-secondary">Next →</button>
+    </div>
+
+    <!-- Pagination Info -->
+    <div class="pagination-info">
+      <p id="pageInfo">Showing page 1</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 News Explorer. All rights reserved.</p>
+      <p>Data provided by <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a></p>
+      <a href="https://newsapi.org/docs" target="_blank">API Documentation</a>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
