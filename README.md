@@ -44,10 +44,10 @@ Built with **HTML, CSS, and JavaScript**.
 Make sure the API key file is not committed to GitHub.
 
 📁 Project Structure
-index.html
-style.css
-script.js
-config.js
+-index.html
+-style.css
+-script.js
+-config.js
 
 ❤️ Credits
 News data provided by NewsAPI
